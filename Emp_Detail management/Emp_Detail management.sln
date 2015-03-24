@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detail management", "ConsoleApplication2\Detail management.csproj", "{4F916A68-9414-4CAC-A051-920333633310}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emp_Database", "Emp_Database\Emp_Database.csproj", "{AA133D53-A1C5-47BC-A6D0-E613A06E766A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F916A68-9414-4CAC-A051-920333633310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F916A68-9414-4CAC-A051-920333633310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F916A68-9414-4CAC-A051-920333633310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F916A68-9414-4CAC-A051-920333633310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA133D53-A1C5-47BC-A6D0-E613A06E766A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA133D53-A1C5-47BC-A6D0-E613A06E766A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA133D53-A1C5-47BC-A6D0-E613A06E766A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA133D53-A1C5-47BC-A6D0-E613A06E766A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
