@@ -1,0 +1,338 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <style type="text/css">
+         .style7
+         {
+             font-size: xx-large;
+         }
+         .style8
+         {
+             color: #CC0066;
+             font-style: italic;
+             font-weight: bold;
+         }
+         .style9
+         {
+             font-size: x-large;
+         }
+         .style12
+         {
+             color: #FF0066;
+             font-style: italic;
+             font-weight: bold;
+         }
+         .style14
+         {
+             height: 477px;
+             width: 957px;
+         }
+         .style15
+         {
+             height: 85px;
+             background-color: #CCCCCC;
+         }
+         .style16
+         {
+             color: #FFFFFF;
+             font-style: italic;
+             font-weight: bold;
+         }
+         .style18
+         {
+             text-decoration: blink;
+         }
+         .style19
+         {
+             width: 214px;
+             height: 45px;
+             background-color: #333333;
+         }
+         .style20
+         {
+             font-style: italic;
+             font-weight: bold;
+             text-decoration: blink;
+             color: #0033CC;
+         }
+         .style21
+         {
+             height: 45px;
+             width: 308px;
+             background-color: #333333;
+         }
+         .style22
+         {
+             width: 198px;
+             height: 45px;
+             background-color: #333333;
+         }
+         .style23
+         {
+             width: 194px;
+             height: 45px;
+             background-color: #333333;
+         }
+         .style24
+         {
+             width: 213px;
+             height: 45px;
+             background-color: #333333;
+         }
+         .style25
+         {
+             background-color: #333333;
+         }
+         .style28
+         {
+             font-size: x-large;
+             font-style: italic;
+             font-weight: bold;
+         }
+         .style29
+         {
+             font-size: x-large;
+             font-style: italic;
+         }
+         .style31
+         {
+             background-color: #CCCCCC;
+             height: 29px;
+         }
+         .style32
+         {
+             font-style: italic;
+             font-weight: bold;
+             text-decoration: blink;
+             color: #660033;
+         }
+         .style33
+         {
+             background-color: #CCCCCC;
+         }
+    </style>
+
+</head>
+<body>
+<form id="form1" runat="server">
+   <div> <table align="center" class="style14">
+        <tr>
+            <td class="style15" colspan="5">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span class="style7"><asp:Image 
+                    ID="Image2" runat="server" Height="127px" ImageUrl="~/pics/logo.jpg" 
+                    Width="177px" />
+                <span class="style20">&nbsp; </span><span class="style32">Clothes Mania.Com</span><span class="style12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button1" runat="server" BackColor="#333333" BorderColor="White" 
+                    CssClass="style12" Font-Bold="True" Font-Size="Large" ForeColor="White" 
+                    Height="45px" Text="Login" Width="137px" onclick="Button1_Click" />
+&nbsp;&nbsp;
+                <asp:Button ID="Button2" runat="server" BackColor="#333333" BorderColor="White" 
+                    CssClass="style12" Font-Bold="True" Font-Size="Large" ForeColor="White" 
+                    Height="45px" Text="Sign Up" Width="131px" onclick="Button2_Click" />
+&nbsp;&nbsp; </span></span>
+                <span class="style8"><span class="style7">
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span></span><span class="style9"><asp:UpdatePanel ID="UpdatePanel1" runat="server">
+               <ContentTemplate>
+                   <asp:Image ID="Image1" runat="server" Height="300px" ImageUrl="~/img/0.jpg" Width="100%"/>
+                   
+                   <asp:ScriptManager ID="ScriptManager1" runat="server">
+               
+                   </asp:ScriptManager>
+               
+                   <asp:Timer ID="Timer1" runat="server" OnTick="Timer1_Tick" Interval="1500">
+                   </asp:Timer>
+               </ContentTemplate>
+                </asp:UpdatePanel>
+                    <span class="style16"><span class="style18">
+                </span> </span></span><span class="style7"><span class="style8">&nbsp;</span></span><span 
+                    class="style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+        </tr>
+        <tr>
+            <td colspan="5" class="style33">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style23">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton1" runat="server" BackColor="#333333" 
+                    CssClass="style25" Font-Bold="True" Font-Size="Large" ForeColor="White" 
+                    onclick="LinkButton1_Click">Home</asp:LinkButton>
+            </td>
+            <td class="style24">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton2" runat="server" Font-Bold="True" 
+                    Font-Size="Large" ForeColor="White" onclick="LinkButton2_Click">Men</asp:LinkButton>
+            </td>
+            <td class="style19">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton3" runat="server" Font-Bold="True" 
+                    Font-Size="Large" ForeColor="White" onclick="LinkButton3_Click">Women</asp:LinkButton>
+            </td>
+            <td class="style22">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton4" runat="server" Font-Bold="True" 
+                    Font-Size="Large" ForeColor="White" onclick="LinkButton4_Click">Footwear</asp:LinkButton>
+            </td>
+            <td class="style21">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton5" runat="server" Font-Bold="True" 
+                    Font-Size="Large" ForeColor="White" onclick="LinkButton5_Click">New Arrivals</asp:LinkButton>
+            </td>
+        </tr>
+        <tr>
+            <td  colspan="5" align="center" class="style33"><b><span class="style29">Women Collection's</span></b><br/><br/><br/>
+           
+                <marquee scrollamount="4" scrolldelay="7" onmouseover="this.stop();" onmouseout="this.start();">
+                <asp:ImageButton ID="ImageButton1" runat="server"  PostBackUrl="~/Ethnicwear.aspx" Height="280" ImageUrl="~/img1/0.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton2" runat="server"  PostBackUrl="~/Dresses.aspx" Height="280" ImageUrl="~/img1/1.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton3" runat="server"  PostBackUrl="~/Suits.aspx" Height="280" ImageUrl="~/img1/2.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton4" runat="server"  PostBackUrl="~/Ethnicwear.aspx" Height="280" ImageUrl="~/img1/3.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton5" runat="server"  PostBackUrl="~/womankurtis.aspx" Height="280" ImageUrl="~/img1/4.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton6" runat="server"  PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/5.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton7" runat="server"  PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/6.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton15" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/7.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton16" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/8.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton17" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/9.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton18" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/10.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton19" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/11.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton20" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/12.jpeg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton21" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/13.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton22" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/14.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton23" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/15.jpeg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton24" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/16.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton25" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/17.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton26" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/18.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton27" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/19.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton28" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/20.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton29" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/21.jpeg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton30" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/22.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton31" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/23.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton32" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/24.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton33" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/25.jpeg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton34" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/26.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton35" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/27.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton36" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/28.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton37" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/29.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton38" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/30.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton39" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/31.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton40" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/32.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton41" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/33.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton42" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/34.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton43" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/35.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton44" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/36.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton45" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/37.jpeg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton46" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/38.jpg"  Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton47" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/39.jpg"  Width="360px"></asp:ImageButton>
+                 <asp:ImageButton ID="ImageButton48" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/40.jpg"  Width="360px"></asp:ImageButton>
+                 <asp:ImageButton ID="ImageButton49" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/41.jpeg"  Width="360px"></asp:ImageButton>
+                 <asp:ImageButton ID="ImageButton50" runat="server" PostBackUrl="~/wfootwear.aspx" Height="280" ImageUrl="~/img1/42.jpg"  Width="360px"></asp:ImageButton></marquee><br />
+                <br/></td>
+              
+        </tr>
+
+        <tr>
+            <td colspan="5" class="style25">
+                &nbsp;</td>
+        </tr>
+        <tr >
+            <td colspan="5" align="center" class="style33"><b><span class="style28">Men Collection's</span></b><br/><br/><br/>
+           
+                <marquee scrollamount="4" scrolldelay="7" onmouseover="this.stop();" onmouseout="this.start();">
+
+                <asp:ImageButton ID="ImageButton8" runat="server" PostBackUrl="~/Shirts.aspx" Height="280" ImageUrl="~/img2/0.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton9" runat="server" PostBackUrl="~/Jeans.aspx" Height="280" ImageUrl="~/img2/1.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton10" runat="server" PostBackUrl="~/Trousers.aspx" Height="280" ImageUrl="~/img2/2.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton11" runat="server" PostBackUrl="~/mfootwear.aspx" Height="280" ImageUrl="~/img2/3.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton12" runat="server" PostBackUrl="~/Sportswear.aspx" Height="280" ImageUrl="~/img2/4.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton13" runat="server" PostBackUrl="~/mfootwear.aspx" Height="280" ImageUrl="~/img2/5.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton52" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/6.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton14" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/7.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton51" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/8.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton53" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/9.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton54" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/10.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton55" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/11.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton56" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/12.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton57" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/13.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton58" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/14.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton59" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/15.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton60" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/16.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton61" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/17.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton62" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/18.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton63" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/19.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton64" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/20.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton65" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/21.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton66" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/22.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton67" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/23.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton68" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/24.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton69" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/25.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton70" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/26.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton71" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/27.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton72" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/28.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton73" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/29.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton74" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/30.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton75" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/31.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton76" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/32.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton77" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/33.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton78" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/34.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton79" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/35.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton80" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/36.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton81" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/37.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton82" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/38.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton83" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/39.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton84" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/40.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton85" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/41.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton86" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/42.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton87" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/43.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton88" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/44.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton89" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/45.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton90" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/46.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton91" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/47.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton92" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/48.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton93" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/49.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton94" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/50.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton95" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/51.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton96" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/52.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton97" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/53.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton98" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/54.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton99" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/55.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton100" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/56.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton101" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/57.jpg" Width="360px"></asp:ImageButton>
+                <asp:ImageButton ID="ImageButton102" runat="server" PostBackUrl="~/Tshirts.aspx" Height="280" ImageUrl="~/img2/58.jpg" Width="360px"></asp:ImageButton>
+                
+
+                
+                </marquee></td>
+                
+        </tr>
+        <br/><br/>
+        <tr>
+            <td colspan="5" class="style33">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5" class="style31">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5" class="style33">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+ </div>   </form>
+    </body>
+</html>
